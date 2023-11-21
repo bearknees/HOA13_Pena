@@ -1,0 +1,5 @@
+---
+- name: Install and configure NTP on controllers
+  apt:
+    name: ntp
+    state: present

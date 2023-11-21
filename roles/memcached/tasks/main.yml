@@ -1,0 +1,5 @@
+---
+- name: Install Memcached on controllers
+  apt:
+    name: memcached
+    state: present

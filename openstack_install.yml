@@ -1,0 +1,13 @@
+---
+- name: OpenStack Installation Playbook
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - ntp
+    - open_stack
+    - sql
+    - message_queue
+    - memcached
+    - etcd

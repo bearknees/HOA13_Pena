@@ -1,0 +1,5 @@
+---
+- name: Install Message Queue on controllers
+  apt:
+    name: rabbitmq-server
+    state: present
